@@ -27,7 +27,7 @@ risky pattern in your arguments (`live`, `remove`, `delete`,...)
 
 ## Default pattern
 
-    var regExpDefault = regexp.MustCompile("(?i)(del|delete|remove|rm|live)")
+    var regExpDefault = regexp.MustCompile("(?i)(del|delete|remove|rm|live|prod|production)")
 
 ## TODO
 
