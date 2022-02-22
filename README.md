@@ -6,34 +6,28 @@ risky pattern in your arguments (`live`, `remove`, `delete`,...)
 
 ## Build or installation
 
-```
-$ go get github.com/icy/ido
-$ ido remove my cluster
-
-```
+    $ go get github.com/icy/ido
+    $ ido remove my cluster
 
 ## Examples
 
-```
-$ go build
-$ ./ido rm -rfv /prod/
+    $ go build
+    $ ./ido rm -rfv /prod/
 
-:: Found risky pattern: rm
-:: Please type YES and enter to continue:
-:: Thanks, you may have saved your system.
+    :: Found risky pattern: rm
+    :: Please type YES and enter to continue:
+    :: Thanks, you may have saved your system.
 
-$ /ido echo rm -rfv /prod/
+    $ /ido echo rm -rfv /prod/
 
-:: Found risky pattern: rm
-:: Please type YES and enter to continue: YES
-:: Going to execute your command... Best luck.
-rm -rfv /prod/
+    :: Found risky pattern: rm
+    :: Please type YES and enter to continue: YES
+    :: Going to execute your command... Best luck.
+    rm -rfv /prod/
 
 ## Default pattern
 
-```
-var regExpDefault = regexp.MustCompile("(?i)(del|delete|remove|rm|live)")
-```
+    var regExpDefault = regexp.MustCompile("(?i)(del|delete|remove|rm|live)")
 
 ## TODO
 
