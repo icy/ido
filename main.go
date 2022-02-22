@@ -38,6 +38,7 @@ func main() {
 		if regExpDefault.FindStringIndex(arg) != nil {
 			icount += 1
 			warnf("Found risky pattern: %s\n", arg)
+			break
 		}
 	}
 	if icount > 0 {
