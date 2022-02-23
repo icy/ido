@@ -1,13 +1,12 @@
 ## Description
 
 `ido` (`I do`) executes your shell command provided as its input,
-but it may wait for you to confirm if there is some potential
+but it may wait for you to confirm when there is some potential
 risky pattern in your arguments (`live`, `remove`, `delete`,...)
 
 ## Build or installation
 
     $ go get github.com/icy/ido
-    $ ido remove my cluster
 
 ## Examples
 
