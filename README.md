@@ -10,14 +10,14 @@ risky pattern in your arguments (`live`, `remove`, `delete`,...)
 
 ## Examples
 
-    $ go build
-    $ ./ido rm -rfv /prod/
+    $ go get github.com/icy/ido
+    $ ido rm -rfv /prod/
 
     :: Found risky pattern: rm
     :: Please type YES and enter to continue:
     :: Thanks, you may have saved your system.
 
-    $ ./ido echo rm -rfv /prod/
+    $ ido echo rm -rfv /prod/
 
     :: Found risky pattern: rm
     :: Please type YES and enter to continue: YES
