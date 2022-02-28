@@ -20,7 +20,7 @@ import (
 	"syscall"
 )
 
-var regExpDefault = regexp.MustCompile("(?i)(del|delete|remove|rm|live|prod|production)")
+var regExpDefault = regexp.MustCompile("(?i)(del|delete|remove|rm|live|prod|production|format)")
 
 func warnf(format string, a ...interface{}) {
 	fmt.Fprint(os.Stderr, ":: ", fmt.Sprintf(format, a...))
